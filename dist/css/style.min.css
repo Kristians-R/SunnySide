@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=style.min.css.map */
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}li{list-style:none;display:inline}a{text-decoration:none}header{background:url(/images/desktop/image-header.jpg);background-position:20% 80%;background-size:cover;height:75vh;color:#fff}header nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:40px;margin-bottom:20px}header nav a{color:#fff;padding-right:20px}header .header-showcase{text-align:center}header .header-showcase h1{margin-bottom:40px;font-size:3rem}
+/*# sourceMappingURL=style.min.css.map */
