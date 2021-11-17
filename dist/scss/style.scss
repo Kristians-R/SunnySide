@@ -22,6 +22,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
 li {
   list-style: none;
   display: inline;
@@ -100,9 +105,12 @@ header {
     .btn-learn {
       border: none;
       background-color: #fff;
-      border-bottom: 2px solid #ffd302;
+      border-bottom: 2px solid hsl(51, 100%, 49%);
       font-weight: bold;
       cursor: pointer;
+    }
+    .btn-learn-red {
+      border-bottom: 2px solid hsl(7, 99%, 70%);
     }
   }
 }
@@ -125,21 +133,21 @@ header {
       h3 {
         padding: 20px 0;
         font-size: 2rem;
-        color: #102e28;
+        color: hsl(167, 40%, 24%);
         font-weight: bold;
       }
       p {
         line-height: 1.5rem;
         padding-bottom: 40px;
-        color: #102e28;
+        color: hsl(167, 40%, 24%);
       }
     }
     .photo-text {
       h3 {
-        color: #134157;
+        color: hsl(198, 62%, 26%);
       }
       p {
-        color: #134157;
+        color: hsl(198, 62%, 26%);
       }
     }
   }
@@ -153,5 +161,86 @@ header {
     background: url(/images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+}
+
+.client-testiomonials {
+  padding: 100px 40px;
+  text-align: center;
+
+  h4 {
+    color: #b8b7b4;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 40px;
+  }
+
+  .clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+
+    .client {
+      padding: 0 40px;
+
+      img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 35px;
+      }
+      .client-desc {
+        margin-bottom: 40px;
+        color: hsl(213, 9%, 39%);
+      }
+      h5 {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+      .client-position {
+        color: #b8b7b4;
+      }
+    }
+  }
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+footer {
+  background-color: #90d4c5;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    color: hsl(168, 34%, 41%);
+    padding: 20px;
+  }
+  a {
+    color: hsl(168, 34%, 41%);
+    padding: 20px;
+  }
+
+  .social-links {
+    margin-top: 40px;
+
+    i {
+      color: hsl(168, 34%, 41%);
+      padding: 10px;
+      cursor: pointer;
+    }
   }
 }
