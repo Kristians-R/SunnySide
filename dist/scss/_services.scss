@@ -1,0 +1,160 @@
+.services {
+  display: flex;
+  height: 70vh;
+
+  .services-all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .services-text {
+      width: 30%;
+      text-align: center;
+      position: absolute;
+
+      h3 {
+        padding: 20px 0;
+        font-size: 2rem;
+        color: hsl(167, 40%, 24%);
+        font-weight: bold;
+      }
+      p {
+        line-height: 1.5rem;
+        padding-bottom: 40px;
+        color: hsl(167, 40%, 24%);
+      }
+    }
+    .photo-text {
+      h3 {
+        color: hsl(198, 62%, 26%);
+      }
+      p {
+        color: hsl(198, 62%, 26%);
+      }
+    }
+  }
+}
+
+.client-testiomonials {
+  padding: 100px 40px;
+  text-align: center;
+
+  h4 {
+    color: #b8b7b4;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 40px;
+  }
+
+  .clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+
+    .client {
+      padding: 0 40px;
+
+      img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 35px;
+      }
+      .client-desc {
+        margin-bottom: 40px;
+        color: hsl(213, 9%, 39%);
+      }
+      h5 {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+      .client-position {
+        color: #b8b7b4;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .services {
+    flex-direction: column;
+    height: 100%;
+
+    .services-all {
+      height: 70vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .services-text {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.client-testiomonials {
+  padding: 30px 20px;
+
+  h4 {
+    padding-bottom: 0px;
+  }
+  .clients {
+    flex-direction: column;
+
+    .client {
+      padding: 0 30px;
+
+      img {
+        margin-bottom: 5px;
+        margin-top: 45px;
+      }
+      .client-desc {
+        margin-bottom: 20px;
+        color: hsl(213, 9%, 39%);
+      }
+      h5 {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .client-testiomonials {
+    .clients {
+      width: 90%;
+      .client {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .services {
+    .services-all {
+      .services-text {
+        width: 80%;
+        text-align: center;
+        position: absolute;
+      }
+    }
+  }
+}
